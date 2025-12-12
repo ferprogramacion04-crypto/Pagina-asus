@@ -103,6 +103,12 @@ ul, li{
     font-size: 15px;
 }
 
+.bi-list{
+    display: none;
+    position: absolute;
+    left: 10px;
+}
+
 .header__asus-person{
     display: flex;
     align-items: center;
@@ -154,4 +160,33 @@ a:hover{
 }
 
 
+    
+
+@media (max-width: 1025px) {
+
+    .header {
+        justify-content: center;
+        position: relative; 
+    }
+
+    .header__nav-item,
+    .header__asus-person,
+    .header__asus-container {
+        display: none;
+    }
+
+    .bi-list {
+        display: flex;
+        position: absolute;
+        
+    }
+
+    .header__logo-container {
+        margin: 0 auto;      
+        display: block;       
+        text-align: center;  
+    }
+}
+
+    
 
